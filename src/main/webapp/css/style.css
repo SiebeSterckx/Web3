@@ -1,0 +1,592 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #545454;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    padding-bottom: 5em;
+}
+
+
+
+/*---------------  H E A D E R  ---------------*/
+/*---------------  N A V  ---------------*/
+
+header {
+    background: #ff6542;
+    padding: 0;
+}
+
+header h1 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-size: 3.7rem;
+    margin: 0 auto;
+    padding: 0.3em 0;
+    text-align: center;
+    border-bottom: 2px solid #545454;
+}
+
+nav {
+    max-width: 100%;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    color: white;
+    padding: 0.5em 0.8em;
+    font-size: 1.6rem;
+    margin: 0.6em 1em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 1.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin: -0.5em 1em;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: #ff6542;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    display: block;
+    align-content: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c4e7d4;
+    color: #000;
+}
+
+.dropdown-content a:first-child:hover  {
+    border-radius: 20px 20px 0 0;
+}
+
+.dropdown-content a:last-child:hover {
+    border-radius: 0 0 20px 20px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ff6542;
+}
+
+.dropbtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropbtn:hover{
+    background: #c4e7d4;
+    color: #000;
+}
+
+#actual {
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/*---------------  F O O T E R  ---------------*/
+
+footer {
+    background: #ff6542;
+    padding: 0.7em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #545454;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0 2em 0 2em;
+    list-style: none;
+    justify-content: space-between;
+}
+
+footer ul li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+
+/*---------------  M A I N  ---------------*/
+/*---------------  H O M E  ---------------*/
+
+#LoginContainer {
+    padding: 4em 0;
+    width: 75%;
+    margin: 0 auto
+}
+
+#LoginSession {
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+    "LoginLeft LoginRight";
+    justify-items: center;
+    background: #000;
+    border: #ff6542 3px solid;
+    border-radius: 20px;
+    color: #fff;
+}
+
+#LoginRight {
+    justify-self: center;
+    grid-area: LoginRight;
+    padding: 0;
+    margin: 0;
+}
+
+#LoginLeft {
+    grid-area: LoginLeft;
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+}
+
+#LoginLeft img {
+    width: 350px;
+    border-radius: 20px 0 0 20px;
+}
+
+#LoginRight h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#LoginRight p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#LoginRight form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0 0 0;
+}
+
+#LoginRight label img {
+    height: 75px;
+}
+
+#LoginRight form p {
+display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+#LoginRight input {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #ff6542;
+    border-radius: 10px;
+    margin: 0.5em 0 1em 1em;
+    padding: 0 0.5em;
+    font-size: 1.5rem;
+}
+
+#HomeWelkom {
+    background-image: url("../images/Welkom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backgroud-position: center;
+    background-size: cover;
+    padding: 12em 10em;
+}
+
+#TekstWelkom {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 6em 5em;
+}
+
+#TekstWelkom h2 {
+    font-size: 2.4rem;
+}
+
+#TekstWelkom h3 {
+    font-size: 2rem;
+}
+
+#TekstWelkom p {
+    font-size: 1.3rem;
+    padding-bottom: 1.5em;
+}
+
+#logoutButton {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    background: #ff6542;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 0.4em 0.5em;
+    font-weight: bold;
+}
+
+#logoutButton:hover {
+    color: #000;
+    background: #c4e7d4;
+}
+
+
+
+/*---------------  R E G I S T E R  ---------------*/
+
+#addContainer {
+    padding: 8em 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.alert-danger {
+    padding: 0.5em;
+    background-color: #efcccc;
+    border: 1px solid #b93432;
+    color: #b93432;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.alert-danger ul {
+    list-style-type: none;
+}
+
+#addContainer form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 5em 6em;
+    color: #fff;
+}
+
+#addContainer form label {
+    display: block;
+    margin: 0.5em auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#addContainer form input, select, option {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: #444;
+    color: #fff;
+    border-radius: 0.4rem;
+    margin: 0.3em auto;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 1.5em;
+}
+
+.addBoxes input[type="radio"] + label, input[type="radio"] {
+    display: inline;
+    width: auto;
+}
+
+#addContainer h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #222;
+}
+
+
+
+/*---------------  O V E R V I E W  ---------------*/
+
+#OverviewContainer {
+    background: rgba(0,0,0, 0.75);
+    margin: 4em 7em;
+    border: 3px solid #fff;
+}
+
+#OverviewContainer h2 {
+    margin: 0;
+    padding: 0.25em 0;
+    text-align: center;
+    background: #ff6542;
+    color: #fff;
+    font-size: 2.2rem;
+    border-bottom: 3px solid #fff;
+    text-transform: uppercase;
+}
+
+#OverviewContainer table {
+    color: #fff;
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    padding: 3em 2em;
+}
+
+#OverviewContainer table img {
+    height: 25px;
+}
+
+#OverviewContainer thead th {
+    font-size: 1.1rem;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #c4e7d4;
+    color: #fff;
+}
+
+#OverviewContainer th, td {
+    padding: 0.3em 2.5em;
+    text-align: center;
+}
+
+#OverviewContainer div {
+    border-left: 2px solid #c4e7d4;
+}
+
+#OverviewContainer ul {
+    list-style-type: none;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+#OverviewContainer ul li {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#OverviewContainer ul li a {
+    color: #ffca3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#OverviewContainer ul li a:hover {
+    color: #c4e7d4;
+    text-decoration: underline;
+}
+
+
+
+/*---------------  D E L E T E   C O N F I R M  ---------------*/
+
+#deleteContainer {
+    margin: 8em auto;
+    max-width: 80%;
+    background: rgba(0,0,0, 0.75);
+    color: #fff;
+}
+
+#deleteContainer h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0.4em 0 0.1em 0;
+}
+
+#deleteContainer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#deleteContainer table {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em;
+}
+
+#deleteContainer thead th {
+    font-size: 1.1rem;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #c4e7d4;
+}
+
+#deleteContainer th, td {
+    padding: 0.3em 2.5em;
+    text-align: center;
+}
+
+#verwijderen2 {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: auto;
+    gap: 0 0;
+    grid-template-areas:
+    "verwijderen nietVerwijderen";
+    justify-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 1em 0 1.5em;
+}
+
+#verwijderen2 form {
+    margin: 0 auto;
+}
+
+#verwijderen {
+    justify-self: center;
+    grid-area: verwijderen;
+    padding: 0.3em;
+    width: 4em;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+#nietVerwijderen {
+    justify-self: center;
+    grid-area: nietVerwijderen;
+    padding: 0.3em 0;
+    width: 4em;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+#verwijderen:hover {
+    background: #c4e7d4;
+    color: #000;
+    font-weight: bold;
+}
+
+#nietVerwijderen:hover {
+    background: #c4e7d4;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+/*--------------- O V E R V I E W   W O R K O R D E R  ---------------*/
+
+#OverviewWorkOrderContainer {
+    background: rgba(0,0,0, 0.75);
+    margin: 4em 7em;
+    border: 3px solid #fff;
+}
+
+#WOTop h2 {
+    margin: 0;
+    padding: 0.25em 0;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    background: #ff6542;
+    font-size: 2.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#WOTop form {
+    float: right;
+    color: #fff;
+    margin-top: -3.1rem;
+    margin-right: 0.5em;
+}
+
+#WOTop form label {
+    float: left;
+    font-size: 1.2rem;
+    margin: 0.5em 0.4em 0 0;
+}
+
+#WOTop form select {
+    width: auto;
+    color: #000;
+    background: #f1f1f1;
+}
+
+#WOTop form select:hover {
+    background: #444;
+    color: #fff;
+}
+
+#OverviewWorkOrderBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 2em 0;
+    gap: 3em;
+}
+
+#OverviewWorkOrderBox table {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 0.5em;
+}
+
+#OverviewWorkOrderBox table th, #OverviewWorkOrderBox table td {
+    padding: 0.3em;
+    font-size: 1.2rem;
+}
+
+#OverviewWorkOrderBox table img {
+    height: 25px;
+}
+
+#OverviewWorkOrderBox ul {
+    list-style-type: none;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+#OverviewWorkOrderBox ul li {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#OverviewWorkOrderBox ul li a {
+    color: #ffca3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#OverviewWorkOrderBox ul li a:hover {
+    color: #c4e7d4;
+    text-decoration: underline;
+}
+
